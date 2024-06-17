@@ -1,10 +1,21 @@
-# Code Grand Slam 
+ Code Grand Slam 
 
 ``` 
+# Function to load assets
+def load_assets():
+    scene.setBackgroundImage(codegrandslam_asset_court.tenniscourt_background)
+    leftracquet = sprites.create(codegrandslam_asset_court.image`left_racquet`)
+    rightracquet = sprites.create(codegrandslam_asset_court.image`right_racquet`)
+    ball = sprites.create(codegrandslam_asset_court.image`ball`)
+    return leftracquet, rightracquet, ball
+
+# Call the function to load assets
+leftracquet, rightracquet, ball = load_assets()
+
+leftracquet = sprites.create(codegrandslam_asset_court.image("left_racquet"))
+rightracquet = sprites.create(codegrandslam_asset_court.image("right_racquet"))
+ball = sprites.create(codegrandslam_asset_court.image("ball"))
 scene.setBackgroundImage(codegrandslam_asset_court.tenniscourt_background)
-leftracquet = sprites.create(codegrandslam_asset_court.image`left_racquet`)
-rightracquet = sprites.create(codegrandslam_asset_court.image`right_racquet`)
-ball=  sprites.create(codegrandslam_asset_court.image`ball`)
 
 ```
 
@@ -213,6 +224,7 @@ To share your game with friends and host a multiplayer game, click "Host Multipl
 
 
 ```package 
-codegrandslam_asset_court=github:siobhanoswald/codegrandslam_asset_court
+
+codegrandslam_asset_court = github:siobhanoswald/codegrandslam_asset_court
 
 ```
