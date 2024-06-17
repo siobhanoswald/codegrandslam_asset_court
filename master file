@@ -1,0 +1,218 @@
+# Code Grand Slam 
+
+``` 
+scene.setBackgroundImage(codegrandslam_asset_court.tenniscourt_background)
+leftracquet = sprites.create(codegrandslam_asset_court.image`left_racquet`)
+rightracquet = sprites.create(codegrandslam_asset_court.image`right_racquet`)
+ball=  sprites.create(codegrandslam_asset_court.image`ball`)
+
+```
+
+## Step 1 
+The ``||loops:on start||`` block is the first thing that runs when our game begins.
+
+The ``||loops:on start||`` block has already been placed into the workspace for you.
+
+Let's set the background for our game.  From the ``||scene: scene||`` menu, select the ``||scene:setBackgroundImage||``. 
+
+Drag the block into the ``||loops:on start||``. 
+
+Click on the grey box to select the background image. There is a precreated asset that looks like a court, click that asset to make it the background of the game. 
+## Step 2 
+
+To create our players for the game we are going to use ``||functions: functions||``.
+
+1. Expand the ``||advanced:Advanced||`` dropdown.
+2. Click the ``||functions:Functions||`` category.
+3. Click ``||arrays:Make a Function...||``
+4. Type "LeftRacquet" where it says "doSomething". 
+5. Click ``||loops:Done ✓||``
+
+## Step 3 
+To create our players, we will also use variables. 
+
+1. Click the ``|| variables: variables||`` category. 
+2. Click  "Make a variable". 
+3. Type Left Racquet and to name your variable. 
+4. From the ``||variables: variables||`` menu, select the ``||variables: set variable to||`` and drag it into the ``|||function:LeftRacquet||``. 
+
+## Step 4 
+To create our player, select the ``|| sprites: sprite of kind player||`` and replace the 0 with the block. 
+
+Click the player dropdown menu and select "create new Kind". From there, type "LeftRacquet". 
+
+Select the Red Racquet from the Asset menu by clicking on the grey box. 
+
+
+## Step 5 
+To control our player movement, we will need to set up controls. 
+1. From the ``|| controller: controller||`` section, select ``||controller: move mysprite with buttons||`` and drag it into the Left Racquet Function. 
+2. Click the plus button at the end of the block. 
+3. Now we can adjust the velocity that the racquet will move with. 
+4. Make vx equal to 0 and vy equal to 150. 
+
+## Step 6 
+We have 2 steps left to set up our players. 
+1. Select ``||sprites: set mysprite x to 0||`` and drag it into the bottom of the left racquet function. 
+2. Click the drop down arrow on the x and select "Left". 
+3. Finally select the ``||sprites: set mySprite to stay in screen||`` and drag it into the function. 
+
+## Step 7
+
+Now that we have set up this function to act as a player, we need to function to run. 
+
+We can do this by selecting ``||functions: callleftracquet||`` and dragging it into the ``||loops: on sart||`` block. 
+
+Now verytime the game starts, this player will automatically run. 
+
+## Step 8
+Now we will repeat those steps, with a few changes, to create the other player. 
+
+1. Expand the ``||advanced:Advanced||`` dropdown.
+2. Click the ``||functions:Functions||`` category.
+3. Click ``||arrays:Make a Function...||``
+4. Type "RightRacquet" where it says "doSomething". 
+5. Click ``||loops:Done ✓||`` 
+
+## Step 9
+Let's create a new variable to make our second racquet. 
+
+1. Click the ``|| variables: variables||`` category. 
+2. Click  "Make a variable". 
+3. Type Right Racquet and to name your variable. 
+4. From the ``||variables: variables||`` menu, select the ``||variables: set variable to||`` and drag it into the ``||function:RightRacquet||``. 
+5. Expand the dropdown menu and select "RightRacquet". 
+
+## Step 10
+To create our player, select the ``|| sprites: sprite of kind player||`` and replace the 0 with the block. 
+
+Click the player dropdown menu and select "create new Kind". From there, type "RightRacquet". 
+
+Select the Blue Racquet from the Asset menu by clicking on the grey box. 
+
+## Step 11
+To control our player movement, we will need to set up controls. 
+1. From the ``|| controller: controller||`` section, select ``||controller: player 2 move mySprite with buttons ||`` and drag it into the Right Racquet Function. 
+2. Click the plus button at the end of the block. 
+3. Now we can adjust the velocity that the racquet will move with. 
+4. Replace the vx 0 with a ``||controller: player 2 dy (up-down buttons)||`` and make vy equal to "150". 
+
+
+## Step 12
+We have 2 steps left to set up our second player. 
+
+1. Select ``||sprites: set mysprite x to 0||`` and drag it into the bottom of the right racquet function. 
+2. Click the drop down arrow on the x and select "Right". Replace the 0 at the end of the block with "164".
+3. Finally select the ``||sprites: set mySprite to stay in screen||`` and drag it into the function. 
+
+Now that we have set up this function to act as a player, we need to function to run. 
+We can do this by selecting ``||functions: callrighttracquet||`` and dragging it into the ``||loops: on sart||`` block. 
+
+## Step 13
+Now that we have our players, we need to create the ball they will play with! We will do this by creating a 3rd ``||function:function||``. 
+
+1. Expand the ``||advanced:Advanced||`` dropdown.
+2. Click the ``||functions:Functions||`` category.
+3. Click ``||arrays:Make a Function...||``
+4. Type "createBall" where it says "doSomething". 
+5. Click ``||loops:Done ✓||`` 
+
+## Step 14
+We will also need to create a new variable for the ball. To create it: 
+
+1. Click the ``|| variables: variables||`` category. 
+2. Click  "Make a variable". 
+3. Type ball and to name the variable. 
+4. From the ``||variables: variables||`` menu, select the ``||variables: set variable to||`` and drag it into the ``||function: createBall||`` block.  
+5. Expand the Mysprite dropdown menu and select ball. 
+
+
+## Step 15
+To create our player, select the ``|| sprites: sprite of kind player||`` and replace the 0 with the block. 
+
+Expand the player dropdown menu and select "Projectile". 
+
+Select the ball from the Asset menu by clicking on the grey box inside the block. 
+
+## Step 16
+To control how the ball will act in the game, we need to adjust the velocity. 
+1. From the ``|sprites: sprites||``menu,   select ``||sprites: set mySprite velocity ||``
+2. Replace both of the current pre set to 100. 
+3. vx should now be 100 and vy should also be 100. 
+This will allow for more dynamic game play, so if the ball is moving too fast for you, you can adjust these numbers. 
+
+## Step 17
+In the last two steps to create the ball, we will need 2 blocks from the ``||sprites: sprites||`` menu. 
+1. Select the ``|| sprites: set my sprite to bounce on wall||`` and drag it into the create ball function. 
+2. Click the mySprite dropdown and select ball. 
+3. Now, select the ``||sprites: set mySprite x to||`` and drag it into the createBall function. 
+4. Click the mySprite dropdown and select ball. 
+5. Click the x dropdown and click y. 
+6. We don't want our players to be able to predict how the ball will move in the y direction, so we will need a ``||math:math ||`` block to make the game harder. 
+7. From the ``|| math:math||`` menu, select the ``||math: pick random||`` and drag it into the last block to replace the 0. 
+8. Set the random to be from 0- 120 (the size of the screen). 
+
+## Step 18 
+Finally, we will need to call the ball function so that it runs just like our players. 
+We can do this by selecting ``||functions: ball||`` and dragging it into the ``||loops: on sart||`` block. 
+
+Now all 3 of our functions will run when the game starts!
+
+## Step 19 
+
+Now that all of our players are set up, we need to set up game parameters. 
+1. Select a ``||sprite: on sprite of kind player overlaps with otherSprite of kind player||`` and drag it into the workspace. 
+2. Click the first dropdown and select "leftracquet". 
+3. Click the second dropdown and select "Projectile". 
+4. To adjust the score, from ``||Info:Info||`` select a ``||info: change player 2 score by||`` and drag it into the overlap block. 
+5. Click the dropdown menu and select Player 1. 
+6. Finally, let's add some noise to our game! Grab a ``||music: play sound until done||`` and drag it into the overlap block. 
+7. Select your sound, we used the buzzer noise. 
+
+## Step 20 
+
+Let's repeat those steps to create the second player's score. 
+1. Select a ``||sprite: on sprite of kind player overlaps with otherSprite of kind player||`` and drag it into the workspace. 
+2. Click the first dropdown and select "rightracquet". 
+3. Click the second dropdown and select "Projectile". 
+4. To adjust the score, from ``||Info:Info||`` select a ``||info: change player 2 score by||`` and drag it into the overlap block. 
+6. Let's add some noise to our game! Grab a ``||music: play sound until done||`` and drag it into the overlap block. 
+7. Select your sound, we used the buzzer noise. 
+
+## Step 21 
+We want to make sure that our score is is even to start out. 
+From the ``||info:info||`` menu: 
+1. Select the ``||info: set score to 0||`` 
+2. Drag this block to the bottom of the ``||loops: on start||`` block. 
+
+## Step 22 
+Tennis sets rquire players to reach 40 points to win, so let's recreate that for our game! 
+1. From the ``||info: info||`` menu, select ``||info: on player 2 score||`` and drag it into the workspace. 
+2. Click the drop down arrow and select player 1 
+3. Change the score from 100 and type 40. 
+4. Select a ``||multiplayer: game over plaer 1 wins||11 block and put it into the info block. 
+5. Make sure it says Player 1 wins 
+6. Finally, from the ``||game:game||`` menu, select a ``||game:use message GAME OVER for win||`` block and drag it into info block. 
+7. Change the message to "Player 1 wins!" 
+
+## Step 23 
+We will need to recreate the parameters, but this time with Player 2 winning. 
+1. From the ``||info: info||`` menu, 
+    select ``||info: on player 2 score||`` and drag it into the workspace. 
+2. Click the drop down arrow and select Player 2
+3. Change the score from 100 and type 40. 
+4. Select a ``||multiplayer: game over plaer 1 wins||`` block and put it into the info block. 
+5. Make sure it says Player 2 wins 
+6. Finally, from the ``||game:game||`` menu, select a ``||game:use message GAME OVER for win||`` block and drag it into info block. 
+7. Change the message to "Player 2 wins!" 
+
+## Step 24 
+Your game is now ready to play! You can click donw once you read this message. 
+
+To share your game with friends and host a multiplayer game, click "Host Multiplayer Game" under the simulator and share the link with whoever you want to face off agaisnt! 
+
+
+```package 
+codegrandslam_asset_court=github:siobhanoswald/codegrandslam_asset_court
+
+```
