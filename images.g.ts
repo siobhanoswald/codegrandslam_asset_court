@@ -126,6 +126,44 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 `;
+            case "image2":
+            case "left_racquet":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . 2 2 2 2 2 2 . . . 
+. . . . . . 2 f 1 f 1 f 2 . . . 
+. . . . . 2 f 1 f 1 f 1 2 . . . 
+. . . . 2 f 1 f 1 f 1 f 2 . . . 
+. . . 2 f 1 f 1 f 1 f 1 2 . . . 
+. . . 2 1 f 1 f 1 f 1 f 2 . . . 
+. . . 2 f 1 f 1 f 1 f 1 2 . . . 
+. . . 2 1 f 1 f 1 f 2 2 . . . . 
+. . . 2 f 1 f 1 f 2 2 . . . . . 
+. . . 2 2 f 1 f 2 2 . . . . . . 
+. . 2 2 2 2 2 2 2 . . . . . . . 
+. f f 2 . . . . . . . . . . . . 
+2 f f . . . . . . . . . . . . . 
+2 2 . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`;
+            case "image3":
+            case "right_racquet":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . 8 8 8 8 8 8 . . . 
+. . . . . . 8 f 1 f 1 f 8 . . . 
+. . . . . 8 f 1 f 1 f 1 8 . . . 
+. . . . 8 f 1 f 1 f 1 f 8 . . . 
+. . . 8 f 1 f 1 f 1 f 1 8 . . . 
+. . . 8 1 f 1 f 1 f 1 f 8 . . . 
+. . . 8 f 1 f 1 f 1 f 1 8 . . . 
+. . . 8 1 f 1 f 1 f 8 8 . . . . 
+. . . 8 f 1 f 1 f 8 8 . . . . . 
+. . . 8 8 f 1 f 8 8 . . . . . . 
+. . 8 8 8 8 8 8 8 . . . . . . . 
+. f f 8 . . . . . . . . . . . . 
+8 f f . . . . . . . . . . . . . 
+8 8 . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`;
         }
         return null;
     })

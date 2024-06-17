@@ -4,6 +4,16 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "tenniscourt_background"
     },
+    "image2": {
+        "data": "hwQQABAAAAAAAAAAAAAgAgAAAAAAAP8CAAAAAAAg/wAAACAiIiICAAAA8vHxIgAAACAfHx8vAAAA8vHx8SEAACAfHx8fLwAAIPHx8fEiAAAgHx8fLwIAACDx8fEiAAAAIB8fHwIAAAAgIiIiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "left_racquet"
+    },
+    "image3": {
+        "data": "hwQQABAAAAAAAAAAAACACAAAAAAAAP8IAAAAAACA/wAAAICIiIgIAAAA+PHxiAAAAIAfHx+PAAAA+PHx8YEAAIAfHx8fjwAAgPHx8fGIAACAHx8fjwgAAIDx8fGIAAAAgB8fHwgAAACAiIiIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "right_racquet"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
